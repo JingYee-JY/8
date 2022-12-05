@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3WF8X28B0C"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3WF8X28B0C');
+</script>
+	
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+    <link rel="stylesheet" href="./owlcarousel/assets/owl.carousel.min.css">
+ <link rel="stylesheet" href="./owlcarousel/assets/owl.theme.default.min.css">
+ <script src="./vendors/jquery.min.js"></script>
+ <script src="./owlcarousel/owl.carousel.js"></script>
+    <title>National Gallery Singapore - Flip and Match</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+        const appHeight = () => {
+     const doc = document.documentElement
+     doc.style.setProperty('--app-height', `${window.innerHeight}px`)
+ }
+ window.addEventListener('resize', appHeight)
+ appHeight()
+     </script>
+</head>
+<body>
+    <div class="splash">
+        <div class="top">
+            <img class="logo" src="./images/logo.png">
+        </div>
+        <div class="info-container">
+            <div class="info">
+                <div class="info-text">For the best experience, please<br>rotate your phone vertically.</div>
+                <img class="rotate" src="./images/rotate.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="start">
+        <div class="top">
+            <img class="logo" src="./images/logo.png">
+        </div>
+        <!--added game-title-->
+        <div class="game-title">
+            <img class="title" src="./images/title.png">
+        </div>
+        <div class="preview">
+            <div class="image-container"><img class="image" src="./images/painting.png"></div>
+            <div class="desc">
+                <h3>How to Play?</h3>
+                <p>Test your memory. Flip and match the same cards.</p>
+            </div>
+        </div>
+        <button class="startButton">
+            <img class="startbtn" src="./images/start-button.png">
+        </button>
+    </div>
+    <div class="game hide">
+        <div class="instruction">
+            <div class="gametop">
+                <img class="logo" src="./images/logo.png">
+                <a class="back-to-home" onclick="window.location.reload();"><img class="back" src="./images/close.png"></a>
+            </div>
+            <div class="taskGiven">
+                <div class="task">
+                    <p>Match the artworks!</p>
+                </div>
+                <div class="count">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="conatainer">
+            <div class="game-container"></div>
+        </div>
+    </div>
+    <div class="final hide">
+        <div class="top">
+            <img class="logo" src="./images/logo.png">
+        </div>
+        <div class="win-lose"><h2>Well Done!</h2></div>
+        <div class="row">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="image-card">
+                        <img src="./images/paint-1.png">
+                    </div>
+                    <div class="content-card">
+                        <h3>Horizontals I
+                        </h3>
+                        <h4>Choy Weng Yang</h4>
+                        <p><i>Horizontals I</i> demonstrates how the artist Choy Weng Yang uses colours to express emotions. His expressive and uneven treatment of paint here is indicative of his emotive and intuitive, rather than scientific, approach to colour.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image-card">
+                        <img src="./images/paint-2.png">
+                    </div>
+                    <div class="content-card">
+                        <h3>Black and White</h3>
+                        <h4>Anthony Poon</h4>
+                        <p>The precise geometric order and contrasting colours in this work create a Hermann grid, an optical illusion where one sees illusory grey spots at the intersections of lines. Its network of silver lines was based not only on visual appeal but on theories of colour.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image-card">
+                        <img src="./images/paint-3.png">
+                    </div>
+                    <div class="content-card">
+                        <h3>Skyline of New York</h3>
+                        <h4>Ahmad Sadali</h4>
+                        <p>Ahmad Sadali believed that modern art forms best reflected modern realities. Here, he produces an abstract view of New York City's waterfront using thin lines that intersect and cut across its buildings. These lines create a shattered picture of the city while simultaneously giving it a sense of unity.</p>
+                    </div>
+                </div>
+              </div>
+                </div>
+        <!-- <img class="end" src="./images/painting.png"> -->
+        <div class="screenshoot">
+            <img src="./images/camera.png" alt="camera">
+            <p>Take a <b>screenshot</b> of this page to redeem an Amazing Sketchbook at the Gallery's Keppel Centre for Art Education! While stocks last.
+            </p>
+        </div>
+        <!-- <button class="playAgain">
+            <img class="startbtn" src="./images/playAgain.png">
+        </button> -->
+        <small>Limited to 1 redemption per person, from 3 Dec 2022 to 31 Jan 2023.
+        </small>
+       
+    </div>
+    <script src="./js/script.js"></script>
+    <script src="canvas2image.js"></script>
+    <script src="./vendors/highlight.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+    <script src="./js/canvas2image.js"></script>
+
+</body>
+</html>
